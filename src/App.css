@@ -2,13 +2,35 @@
   display: flex;
   /* justify-content: space-between; */
   align-items: center;
-  padding: 10px 10px;
+  padding: 40px 40px;
 }
 
 .syber-navbar-left {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+.syber-navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: auto;
+}
+
+.profile-circle-right {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #333;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .profile-circle {
@@ -27,9 +49,11 @@
 }
 
 .navbar-buttons {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-70%);
   display: flex;
   gap: 10px;
-  margin-left: 140px;
 }
 
 .navbar-buttons button {
@@ -45,3 +69,6 @@
   border-radius: 5px;
 }
 
+.active {
+  text-decoration: underline;
+}
